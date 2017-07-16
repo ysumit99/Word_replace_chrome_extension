@@ -1,0 +1,20 @@
+{
+"manifest_version": 2,
+    "name": "[Word Replace]",
+    "description": "[This Chrome Extension Replaces Word(s) with desired Word(s). Created by Sumitkumar Yadav]",
+    "version": "1.0",
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
